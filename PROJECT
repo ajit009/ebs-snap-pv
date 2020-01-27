@@ -1,0 +1,7 @@
+domain: github.com/ajit009/ebs-snap-pv.git
+repo: github.com/ajit009/ebs-snap-pv.git
+resources:
+- group: exoapps
+  kind: Ebssnap
+  version: v1
+version: "2"

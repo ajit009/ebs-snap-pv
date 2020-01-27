@@ -1,0 +1,26 @@
+# permissions to do edit ebssnaps.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: ebssnap-editor-role
+rules:
+- apiGroups:
+  - exoapps.github.com/ajit009/ebs-snap-pv.git
+  resources:
+  - ebssnaps
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - exoapps.github.com/ajit009/ebs-snap-pv.git
+  resources:
+  - ebssnaps/status
+  verbs:
+  - get
+  - patch
+  - update

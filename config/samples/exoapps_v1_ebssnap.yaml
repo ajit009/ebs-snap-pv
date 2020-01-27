@@ -1,0 +1,7 @@
+apiVersion: exoapps.github.com/ajit009/ebs-snap-pv.git/v1
+kind: Ebssnap
+metadata:
+  name: ebssnap-sample
+spec:
+  # Add fields here
+  foo: bar
