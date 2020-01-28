@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: list the dirs
         run: pwd
-      - name: wer is parent
-        run: cd .. && ls -lrta
+      - name: list home
+        run: ls -lrta  
