@@ -6,5 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: build ebssnap
-      run: make --file=../Makefile
+      - name: list the dirs
+        run: pwd
+      - name: wer is parent
+        run: cd .. && ls -lrta
