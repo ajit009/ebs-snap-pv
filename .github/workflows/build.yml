@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v2
-      - name: list home
-        run: ls -lrta  
+      - name: run make
+        run: make
