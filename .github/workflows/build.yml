@@ -1,0 +1,10 @@
+name: build ebsSnap
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: build ebssnap
+      run: make install
