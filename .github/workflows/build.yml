@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: list the dirs
-        run: pwd
+      - name: checkout code
+        uses: actions/checkout@v2
       - name: list home
         run: ls -lrta  
